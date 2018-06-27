@@ -2,7 +2,7 @@ import bird from "../img/bird.png";
 import pipetop from "../img/pipetop.png";
 import pipebottom from "../img/pipebottom.png";
 import background from "../img/background.png";
-
+// gh-pages -d dist
 /*
 best weights:
  [
