@@ -1,4 +1,7 @@
 export default {
+    NETWORK:{
+      hideNodes:2,
+    },
     SCREEN: {
         height: 512,
         width: 576

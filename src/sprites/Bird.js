@@ -7,7 +7,7 @@ export default class Bird extends Sprite {
     constructor(ctx, imgs) {
         super(ctx, imgs);
         this.init(defaultOptions);
-        this.brain = new Network(2, [2], 1);
+        this.brain = new Network(2, [Config.NETWORK.hideNodes], 1);
     }
     shouldFlap(target) {
         let sreenWidth = Config.SCREEN.width;

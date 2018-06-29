@@ -47,7 +47,7 @@ export default class Game {
 
 
         this.optimizer = new Optimizer();
-        this.optimizer.setObjectiveFunction((x) => -Infinity);
+        this.optimizer.setObjectiveFunction((x) => 0);
         let domain = { start: -10, end: 10 };
         this.optimizer.init(nbBirds, 9, domain);//(2+1)*2+(2+1)*1
         //this.optimizer.init(nbBirds, 11, domain);//(3+1)*2+(2+1)*1

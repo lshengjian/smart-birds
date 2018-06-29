@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build --no-source-maps --no-cache --public-url /smart-birds",
-    "build-ga": "parcel build index2.html",
+    "build": "parcel build -d dist-pso --no-source-maps --no-cache --public-url /smart-birds",
+    "build-ga": "parcel build -d dist-ga --no-source-maps --no-cache --public-url /smart-birds/ga index2.html",
     "test": "jest"
   },
   "devDependencies": {

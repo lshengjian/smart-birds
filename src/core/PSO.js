@@ -71,13 +71,14 @@ export default class Optimizer {
         }, this);
         return ret;
     }
-    step() {
-
-        this._particles.forEach(function (particle) {
-            let f = this._objectiveFunction(particle.position);
-            if (f != -Infinity)
+    step(setFitness = false) {
+        if (setFitness) {
+            this._particles.forEach(function (particle) {
+                let f = this._objectiveFunction(particle.position);
                 particle.fitness = f;
-        }, this);
+            }, this);
+        }
+
         this._completeStep();
 
     }
